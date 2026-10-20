@@ -16,9 +16,20 @@ or `search.json`.
 Method:
 1. Read the current CSS and templates first. Work with what is there; don't
    rewrite the site's structure or markup semantics.
-2. Where unsure what the HIG says on a topic, WebFetch the relevant HIG page
-   (e.g. /design/human-interface-guidelines/typography, /color, /layout,
-   /accessibility, /dark-mode, /motion) rather than guessing.
+2. Consult the local HIG reference notes first (in
+   `/Users/snape/Documents/GitHub/holocron-planner/Claude outputs/`; ignore
+   their "Notes for this project" sections, which are about another app):
+   - `apple-hig-foundations.md`: accessibility, color, dark mode, materials,
+     inclusion, images
+   - `apple-hig-components-a.md`: buttons, labels, lists, boxes
+   - `apple-hig-components-c.md`: search fields, popovers, alerts
+   - `apple-hig-components-d.md`: text fields, toggles, progress indicators
+   - `apple-hig-patterns-a.md` / `-b.md`: feedback, entering data, loading
+   - `apple-hig-index.md`: map of every HIG page
+   Only if a topic (e.g. typography, layout, motion) is not covered there,
+   WebFetch the relevant page under
+   https://developer.apple.com/design/human-interface-guidelines/ rather than
+   guessing.
 3. Apply, in small and reversible edits:
    - **Typography**: system font stack (`-apple-system, BlinkMacSystemFont,
      "SF Pro Text", system-ui, sans-serif`), a clear size/weight hierarchy,

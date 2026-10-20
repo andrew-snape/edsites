@@ -44,6 +44,7 @@
     resultsEl = document.createElement('div');
     resultsEl.className = 'search-results';
     resultsEl.hidden = true;
+    resultsEl.setAttribute('aria-live', 'polite');
     main.parentNode.insertBefore(resultsEl, main.nextSibling);
     return resultsEl;
   }
@@ -107,7 +108,8 @@
 
     if (!hits.length) {
       el.innerHTML = '<p class="search-status">No links match <strong>' +
-        escapeHtml(query) + '</strong>.</p>';
+        escapeHtml(query) + '</strong>.</p>' +
+        '<p class="search-status search-hint">Try a shorter word, or browse by subject above.</p>';
       return;
     }
 
