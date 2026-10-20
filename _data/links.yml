@@ -29,6 +29,9 @@ maths:
     - name: Maths Warm-Ups
       url: https://andrew-snape.github.io/mathswarmups/
       description: TV ready launcher for number talks, subitising, WODB, virtual dice, ten frames and a number generator, by Andrew Snape.
+    - name: Visual Patterns
+      url: https://www.visualpatterns.org
+      description: Fawn Nguyen's 50 visual pattern puzzles for noticing, describing and generalising growing patterns, licensed CC BY 4.0 for free classroom use.
 
   rich_tasks:
     - name: NRICH Maths
@@ -40,12 +43,12 @@ maths:
     - name: Open Middle
       url: https://www.openmiddle.com/
       description: Problems with a fixed start and end but many paths through the middle, sorted by grade and topic.
-    - name: Ochre Education
-      url: https://ochreeducation.org/
-      description: Free, sequenced Australian Curriculum aligned lesson resources, including the coordinates unit already in use.
     - name: reSolve
       url: https://resolve.edu.au
       description: Free Australian Curriculum aligned teaching sequences and tasks designed to get students thinking and working like mathematicians.
+    - name: Mathematics Assessment Project (MAP) Classroom Challenges
+      url: https://map.mathshell.org
+      description: Formative Classroom Challenge lessons and summative tasks with scoring rubrics, free to download for non-commercial use; mostly middle-school level, so suits Year 6 extension.
 
   fluency_and_number_facts:
     - name: Times Tables Rock Stars
@@ -69,6 +72,9 @@ maths:
     - name: Dr Paul Swan Maths Games
       url: https://drpaulswan.com.au/resources/games/
       description: Free dice, card and board games targeting basic facts and place value, from Pre-Foundation to Year 6, with printable instructions and video tutorials.
+    - name: Mathsframe
+      url: https://mathsframe.co.uk
+      description: KS2 maths games and worksheets on addition, multiplication, fractions, time and money, with a free games section for quick fact practice.
 
   problem_solving_and_planning:
     - name: Building Thinking Classrooms Resources
@@ -100,6 +106,9 @@ maths:
     - name: Toy Theater Maths
       url: https://toytheater.com/category/teacher-tools/virtual-manipulatives/
       description: Simple virtual manipulatives and maths games that run straight in the browser.
+    - name: GeoGebra
+      url: https://www.geogebra.org
+      description: Free interactive geometry, graphing and virtual manipulative apps with a classroom platform for assigning activities, suited to upper primary.
 
   practice_and_revision:
     - name: Maths Is Fun
@@ -125,6 +134,9 @@ maths:
     - name: Mathematics Curriculum Companion (Arc)
       url: https://arc.educationapps.vic.gov.au/learning/sites/mcc
       description: Victorian Department of Education tool to help plan and teach the Victorian Curriculum 2.0 Mathematics.
+    - name: Australian Curriculum (ACARA v9)
+      url: https://www.australiancurriculum.edu.au/
+      description: ACARA's official Version 9 curriculum site, the authoritative source for Mathematics content descriptions and achievement standards when planning or checking coverage.
 
   professional_learning:
     - name: Australian Association of Mathematics Teachers (AAMT)
@@ -133,6 +145,9 @@ maths:
     - name: T2L TV
       url: https://t2ltv.vhx.tv/browse
       description: Subscription video platform with 350+ professional learning videos and 200+ open ended activity demonstrations from Rob Vingerhoets and Peter Sullivan.
+    - name: Mathematical Association of NSW (MANSW)
+      url: https://www.mansw.nsw.edu.au
+      description: NSW maths teachers' association with a Primary SIG, webinars and the member-only PAMphlet primary publication.
 
 literacy:
   reading:
@@ -157,6 +172,12 @@ literacy:
     - name: BookTrust
       url: https://www.booktrust.org.uk/
       description: Book recommendations by age plus author interviews and reading engagement ideas.
+    - name: Starfall
+      url: https://www.starfall.com/
+      description: Free phonics-based Learn to Read program (ABCs through fluent reading) for Pre-K to Grade 5, used for early reading practice and whole-class phonics; membership adds extra content.
+    - name: StoryWeaver
+      url: https://storyweaver.org.in/
+      description: Free digital library of stories for kids in many languages, used for guided reading and multilingual classrooms.
 
   visual_literacy:
     - name: The Literacy Shed
@@ -165,6 +186,9 @@ literacy:
     - name: Once Upon a Picture
       url: https://www.onceuponapicture.co.uk/
       description: Beautiful illustrations grouped by theme with question prompts for inference, discussion and writing.
+    - name: Google Arts & Culture
+      url: https://artsandculture.google.com/
+      description: Free online collections and virtual museum tours, used for close looking and visual analysis of artworks and historical images.
 
   writing:
     - name: Pobble 365
@@ -176,6 +200,9 @@ literacy:
     - name: Squigly's Playhouse Writing Prompts
       url: https://www.squiglysplayhouse.com/CreativeWriting/WritingPrompts.html
       description: Simple bank of writing prompts sorted loosely by type, handy for a quick free write.
+    - name: ReadWriteThink
+      url: https://www.readwritethink.org/
+      description: NCTE literacy site with free lesson plans, printable editing checklists and student interactives (Story Map, Trading Card Creator) for writing and reading units.
 
   grammar_and_spelling:
     - name: Education.com Grammar Worksheets
@@ -184,6 +211,9 @@ literacy:
     - name: Spellzone
       url: https://www.spellzone.com/
       description: Structured spelling lists and interactive games organised by spelling pattern.
+    - name: Grammar Bytes!
+      url: https://www.chompchomp.com/
+      description: Free grammar lessons and exercises for upper primary and beyond, used for targeted grammar instruction and practice.
 
   comprehension:
     - name: ReadWorks
@@ -203,6 +233,9 @@ literacy:
     - name: Visuwords
       url: https://visuwords.com/
       description: Visual thesaurus that maps how words relate, useful for building word webs on the board.
+    - name: FreeRice
+      url: https://freerice.com/
+      description: Free vocabulary trivia game where each correct answer donates rice to the UN World Food Programme, used as a self-paced word meaning practice.
 
 class_utilities:
   timers_and_randomisers:
@@ -218,11 +251,17 @@ class_utilities:
     - name: Bouncy Balls
       url: https://bouncyballs.org/
       description: Noise meter that makes balls bounce with room volume, a visual cue for managing classroom noise.
+    - name: Name Picker Ninja
+      url: https://www.namepickerninja.com
+      description: Free name picker where you paste a class list, click GO and the names scroll before stopping on one, with an option to keep or remove the chosen name.
 
   grouping_and_seating:
     - name: Flippity Randomiser
       url: https://www.flippity.net/
       description: Turns a Google Sheet into random name pickers, seating charts, and group generators.
+    - name: ClassDojo Group Maker
+      url: https://www.classdojo.com/toolkit/groupmaker/
+      description: Free random group generator in the ClassDojo Toolkit that sorts students into pairs, trios or larger teams and helps rotate partners between activities.
 
   general_tools:
     - name: Blockly Games
@@ -243,6 +282,9 @@ class_utilities:
     - name: Google Classroom
       url: https://classroom.google.com/
       description: Assignment distribution, marking and class announcements.
+    - name: Book Creator
+      url: https://bookcreator.com
+      description: Digital book and multimedia creation tool for students, with a free teacher account (limited storage) for making, reading and publishing class books.
 
   quizzes_and_engagement:
     - name: Kahoot!
@@ -257,14 +299,14 @@ class_utilities:
     - name: Mentimeter
       url: https://www.mentimeter.com/
       description: Live polls and word clouds, useful for gathering whole class responses to a prompt.
+    - name: Wordwall
+      url: https://wordwall.net/for-teachers
+      description: Browser-based game and quiz builder (Match Up, Quiz, Spin the Wheel, Flashcards) with a free plan of 12 templates, shared by link or QR code with no student accounts needed.
 
   thinking_routines:
     - name: PZ's Thinking Routines Toolbox
       url: https://pz.harvard.edu/thinking-routines
       description: Harvard Project Zero's official index of thinking routines (See-Think-Wonder, Claim-Support-Question, and more) sorted by purpose.
-    - name: Visible Thinking
-      url: http://www.visiblethinkingpz.org/VisibleThinking_html_files/VisibleThinking1.html
-      description: The original Project Zero Visible Thinking site, with routine descriptions, examples, and printable documentation.
     - name: Cultures of Thinking
       url: https://pz.harvard.edu/projects/cultures-of-thinking
       description: Project Zero's research on building a whole class culture of thinking, the framework thinking routines sit within.
@@ -276,6 +318,9 @@ class_utilities:
     - name: AERO (Australian Education Research Organisation)
       url: https://www.edresearch.edu.au/
       description: Australia's national education evidence body, with practice guides, videos and courses on effective teaching strategies.
+    - name: Evidence for Learning Teaching and Learning Toolkit
+      url: https://evidenceforlearning.org.au/the-toolkit
+      description: Australian summary of international research on classroom approaches, with estimated cost, strength of evidence and months of learning impact, used when planning or justifying teaching decisions.
 
 research:
   search_and_encyclopedia:
@@ -291,6 +336,9 @@ research:
     - name: Britannica Kids
       url: https://kids.britannica.com/
       description: Simplified encyclopedia entries levelled for younger and older primary readers.
+    - name: Simple English Wikipedia
+      url: https://simple.wikipedia.org/wiki/Main_Page
+      description: Free encyclopedia written in simplified English, useful for lower-primary and EAL/D students reading independently or in guided research.
 
   news_and_current_events:
     - name: Behind the News (BTN)
@@ -316,6 +364,9 @@ research:
     - name: Australian Institute of Aboriginal and Torres Strait Islander Studies
       url: https://aiatsis.gov.au/
       description: Authoritative First Nations resources including the AIATSIS map of Indigenous Australia.
+    - name: ABC Education
+      url: https://www.abc.net.au/education/
+      description: Free Australian Curriculum-aligned games, interactive collections, media literacy and English lessons from the ABC for classroom use.
 
   referencing_and_skills:
     - name: MyBib
@@ -330,9 +381,6 @@ pyp:
     - name: IB Programme Resource Centre
       url: https://resources.ibo.org/
       description: Official IB hub for PYP planners, unit exemplars, and programme documentation.
-    - name: Sharing PYP
-      url: https://sharingpyp.blogspot.com/
-      description: Long running blog of PYP teacher reflections, unit ideas, and inquiry provocations.
     - name: Toddle
       url: https://www.toddleapp.com/
       description: Planning and assessment platform built specifically for IB programmes, including unit planners.
@@ -350,6 +398,9 @@ pyp:
     - name: IB Learner Profile
       url: https://www.ibo.org/benefits/learner-profile/
       description: The ten learner profile attributes with descriptions, useful for display and for framing reflections.
+    - name: PYP-inspired Approaches to Learning posters (Tes, ages 5-7)
+      url: https://www.tes.com/teaching-resource/pyp-inspired-approaches-to-learning-atl-for-lower-primary-13323404
+      description: Free printable child-friendly ATL posters and reflection tools grouped into Thinking, Research, Communication, Self-Management and Social, for display and student conferences.
 
 christian_studies:
   bible_resources:
@@ -362,11 +413,11 @@ christian_studies:
     - name: YouVersion Bible App and Kids
       url: https://www.bible.com/kids
       description: Bible stories, audio, and activities designed specifically for children.
+    - name: Blue Letter Bible
+      url: https://www.blueletterbible.org/
+      description: Free online Bible reference site with multiple translations, Hebrew/Greek lexicon, commentaries, and topical indexes, useful for teacher background study on a passage.
 
   devotions_and_lutheran_resources:
-    - name: Lutheran Education Australia
-      url: https://www.lea.org.au/
-      description: National body for Lutheran schools, with curriculum and formation resources for Christian studies.
     - name: Lutheran Church of Australia
       url: https://www.lca.org.au/
       description: Denominational resources including devotions and background material for Christian studies planning.
@@ -381,6 +432,9 @@ christian_studies:
     - name: Saddleback Kids
       url: https://www.youtube.com/@saddlebackkids
       description: Animated Bible story videos pitched at primary students, handy for introducing a narrative.
+    - name: Superbook Kids Bible
+      url: https://superbookkids.com/
+      description: Free full-length animated Bible episodes (68 listed) with Bible games and a kid-friendly Bible, playable offline in the app, for use as a class video or independent viewing.
 
   teaching_resources:
     - name: Bible Society Australia
@@ -389,3 +443,6 @@ christian_studies:
     - name: Sunday School Zone
       url: https://sundayschoolzone.com/
       description: Free printable activities, puzzles and lesson outlines organised by Bible passage.
+    - name: Godly Play Australia
+      url: https://godlyplay.com.au/
+      description: Australian hub for the Godly Play method of storytelling Bible parables with materials, with accredited training listed by state and territory for teachers planning Christian Studies or chapel sessions.

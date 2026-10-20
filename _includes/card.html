@@ -3,12 +3,18 @@
   Expects `link` with name / url / description / (optional) logo.
 
   If no `logo` is given the site's favicon is fetched from Google's favicon
-  service. If that image fails to load - a 404, or a school network that
-  blocks the service - the inline onerror handler drops it and flags the
-  wrapper, which reveals a letter tile instead of a broken-image icon.
+  service. Two cases fall back to the letter tile:
 
-  These are ~1KB images, and lazy-loading them would mean onerror never
-  fires for cards below the fold, leaving them blank instead of falling
+  - The request fails (a 404, or a school network that blocks the service):
+    onerror drops the image and flags the wrapper.
+  - The request succeeds but returns Google's generic grey globe. That is a
+    real image, so onerror never fires. onload checks naturalWidth instead;
+    the placeholder is 16px wide, so anything at or below that is treated as
+    "no favicon". (Real favicons are normally larger; a genuine 16px icon
+    would also fall back to the letter tile, which is an accepted trade-off.)
+
+  These are ~1KB images, and lazy-loading them would mean onerror/onload
+  never fire for cards below the fold, leaving them blank instead of falling
   back. So they load eagerly on purpose.
 {%- endcomment -%}
 {%- assign domain = include.link.url | remove_first: "https://" | remove_first: "http://" | split: "/" | first -%}
@@ -37,7 +43,8 @@
   <span class="card-top">
     <span class="card-logo-wrap" data-letter="{{ letter }}" data-tile="{{ tile }}">
       <img class="card-logo" src="{{ logo_src }}" alt=""
-           onerror="this.parentNode.classList.add('no-logo');this.remove();">
+           onerror="this.parentNode.classList.add('no-logo');this.remove();"
+           onload="if(this.naturalWidth&&this.naturalWidth<=16){this.parentNode.classList.add('no-logo');this.remove();}">
     </span>
     <span class="card-title">{{ include.link.name }}</span>
   </span>

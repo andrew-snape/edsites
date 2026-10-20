@@ -4,7 +4,7 @@
   --text: #1f2430;
   --muted: #5b6472;
   --border: #e2e5ea;
-  --accent: #2f6fed;
+  --accent: #2563d9;
   --accent-soft: #eaf1ff;
   --accent-text: #ffffff;
   --radius: 10px;
@@ -15,19 +15,19 @@
   --tile-bg-0: var(--accent-soft);
   --tile-fg-0: var(--accent);
   --tile-bg-1: #e3f6f3;
-  --tile-fg-1: #12897f;
+  --tile-fg-1: #0f7068;
   --tile-bg-2: #f1eaff;
   --tile-fg-2: #7c3aed;
   --tile-bg-3: #fff3dc;
-  --tile-fg-3: #b7791f;
+  --tile-fg-3: #8a5a12;
   --tile-bg-4: #ffe9ee;
   --tile-fg-4: #c2255c;
   --tile-bg-5: #e8f7e6;
-  --tile-fg-5: #2f9e44;
+  --tile-fg-5: #237a33;
   --tile-bg-6: #eceafd;
   --tile-fg-6: #5b4fd6;
   --tile-bg-7: #fbe9df;
-  --tile-fg-7: #c05621;
+  --tile-fg-7: #9a4416;
   --shadow: 0 1px 2px rgba(20, 25, 35, 0.06), 0 1px 8px rgba(20, 25, 35, 0.04);
   --shadow-hover: 0 4px 14px rgba(20, 25, 35, 0.10);
 }
@@ -70,10 +70,19 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  font-size: 1rem;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
+  /* Keep content clear of notches and rounded corners in landscape. */
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+h1,
+h2 {
+  line-height: 1.25;
 }
 
 a {
@@ -150,12 +159,17 @@ input:focus-visible {
   gap: 0.35rem;
 }
 
+/* Nav links are pills visually, but the tappable box is at least 44px tall
+   (HIG minimum touch target). */
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.92rem;
+  font-size: 0.9375rem;
   font-weight: 600;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 999px;
 }
 
@@ -188,13 +202,14 @@ input:focus-visible {
 
 .search-input {
   width: 100%;
-  font-size: 0.95rem;
+  min-height: 44px;
+  font-size: 1rem;
   font-family: inherit;
   color: var(--text);
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 0.6rem 2.4rem 0.6rem 1rem;
+  padding: 0.6rem 3rem 0.6rem 1rem;
 }
 
 .search-input::placeholder {
@@ -209,22 +224,36 @@ input:focus-visible {
   appearance: none;
 }
 
+/* 44x44 hit area, sitting inside the input's right edge. */
 .search-clear {
   position: absolute;
-  right: 1.9rem;
+  right: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   background: none;
   border: 0;
+  border-radius: 999px;
   font-size: 1.4rem;
   line-height: 1;
   color: var(--muted);
   cursor: pointer;
-  padding: 0 0.3rem;
+}
+
+.search-clear[hidden] {
+  display: none;
 }
 
 .search-clear:hover {
   color: var(--text);
+}
+
+.search-clear:active {
+  background: var(--accent-soft);
 }
 
 .search-status {
@@ -264,7 +293,7 @@ main,
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
   margin: 0 0 1.75rem;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--muted);
 }
 
@@ -296,19 +325,23 @@ main,
 }
 
 .jump-nav a {
-  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--muted);
   background: var(--surface);
   border: 1px solid var(--border);
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.85rem;
   border-radius: 999px;
 }
 
 .jump-nav a:hover {
   color: var(--accent);
   border-color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* ---------- Subject tiles (homepage) ---------- */
@@ -337,6 +370,11 @@ main,
   transform: translateY(-2px);
 }
 
+.subject-tile:active {
+  box-shadow: var(--shadow);
+  transform: translateY(0);
+}
+
 .subject-tile .icon {
   font-size: 1.8rem;
   display: block;
@@ -350,7 +388,7 @@ main,
 
 .subject-tile .tally {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.875rem;
 }
 
 /* ---------- Sub-areas ---------- */
@@ -371,7 +409,7 @@ main,
 }
 
 .subarea h2 .count {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--muted);
   background: var(--accent-soft);
@@ -404,6 +442,11 @@ main,
 .card:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
+}
+
+.card:active {
+  box-shadow: var(--shadow);
+  transform: translateY(0);
 }
 
 .card-top {
@@ -476,17 +519,17 @@ main,
 
 .card-desc {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   display: block;
 }
 
 .card-meta {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   color: var(--muted);
 }
 
 .card-url {
-  font-size: 0.78rem;
+  font-size: 0.875rem;
   color: var(--accent);
   word-break: break-word;
   margin-top: auto;
@@ -497,8 +540,8 @@ main,
 .site-footer {
   text-align: center;
   color: var(--muted);
-  font-size: 0.85rem;
-  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  padding: 2rem 1rem calc(2rem + env(safe-area-inset-bottom));
 }
 
 .site-footer p {
@@ -506,6 +549,10 @@ main,
 }
 
 .footer-credit a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.25rem;
   color: inherit;
   text-decoration: none;
 }
@@ -536,5 +583,11 @@ main,
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
+  }
+
+  /* Hover lift is motion too; keep the colour/shadow feedback only. */
+  .card:hover,
+  .subject-tile:hover {
+    transform: none;
   }
 }
